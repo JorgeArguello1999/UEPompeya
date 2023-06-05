@@ -5,7 +5,7 @@ class plantillas{
         <!DOCTYPE html>
         <html lang='es'>
         <head>
-            <title>Asistencias Maestros</title>
+            <title>UE Pompeya</title>
             <meta charset='UTF-8'>
             <link rel='stylesheet' href='style.css'>
             <link rel='stylesheet' href='./templates/style.css'>

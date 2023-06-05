@@ -3,10 +3,13 @@
 require_once 'templates/plantillas.php';
 $plantilla = new plantillas();
 
-// Obtenemos los datos 
-require_once 'database/consultas.php';
-$vistas = new vistas();
+require_once 'database/database.php';
+$db = new database();
+$conn = $db->conn;
 
+// Obtenemos los datos 
+require_once 'vistas/m_articulos.php';
+listar($conn);
 
 // Obtenemos la cedula de la URL
 $fechaActual = date("Y-m-d");
