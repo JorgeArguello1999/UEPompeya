@@ -1,0 +1,124 @@
+body {
+    background-color: #0B0B61;
+}
+.btn-sello {
+    position: relative;
+}
+
+.btn-sello:before,
+.btn-sello:after {
+    content:"";
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: blue;
+    opacity: 0;
+    animation: onda 1.7s infinite;
+}
+
+.btn-sello:before {
+    animation-delay: 1s;
+}
+.btn-sello:after {
+    animation-delay: 1.3s;
+}
+
+.btn-sello img {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes onda {
+    0% {
+        transform: scale(1);
+    }
+    15% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+
+p{
+	margin-bottom: 20px;
+}
+
+/* TITULO */
+
+header img{
+	width: 69px;
+	float: left;
+	padding: 20px;
+}
+
+header{
+	background: #4da8cf;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+}
+
+ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+nav ul li {
+	font-family: Arial, sans-serif;
+	display: inline-block;
+}
+
+nav ul li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	transition: all 0.35s linear;
+}
+
+.menu-uno {
+	float: left;
+	padding: 20px 10px;
+	width: 500px;
+	text-align: center;
+}
+
+.titulo {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.menu-dos {
+	float: left;
+	padding: 20px 10px;
+	font-size: 20px;
+	font-weight: bold;	
+}
+
+.menu-dos nav ul li a{
+	transition: all 0.35s linear;
+}
+
+.menu-dos ul li:hover {
+	background: #abdefa;
+	border-radius: 9px;
+	font-size: 20px;
+}
+
+.menu-uno ul li:hover {
+	background: #abdefa;
+	border-radius: 9px;
+	font-size: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;	
+}
