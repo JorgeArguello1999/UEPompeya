@@ -1,11 +1,11 @@
 <?php
-function ver($conn, $id){
+function ver($conn, $filtro){
     // consulta Sql
     $response = mysqli_query($conn, "
     select * from articulos
     inner join autor
     on autor.idautor = articulos.idautor
-    where idarticulos={$id};
+    where idarticulos={$filtro['id']};
     ");
 
     foreach($response as $data){

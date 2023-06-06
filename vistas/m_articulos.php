@@ -1,11 +1,22 @@
 <?php
-function listar($conn){
+function listar($conn, $filtro){
     // consulta Sql
-    $response = mysqli_query($conn, "
-    select * from articulos
-    inner join autor
-    on autor.idautor = articulos.idautor;
-    ");
+    $query = "
+        SELECT *
+        FROM articulos
+        INNER JOIN autor ON autor.idautor = articulos.idautor
+    ";
+
+    // Verificar si el filtro está vacío
+    if (empty($filtro)) {
+        // No se proporcionó filtro, se muestran todos los resultados
+        $query .= ";";
+    } else {
+        // Se proporcionó filtro, se agregan las condiciones a la consulta
+        $query .= " WHERE FechaCreacion >= '{$filtro['desde']}' AND FechaCreacion <= '{$filtro['hasta']}';";
+    }
+
+    $response = mysqli_query($conn, $query);
 
     foreach($response as $data){
         echo "
