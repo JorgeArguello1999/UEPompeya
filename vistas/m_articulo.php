@@ -1,21 +1,18 @@
 <?php
-function listar($conn){
+function ver($conn, $id){
     // consulta Sql
     $response = mysqli_query($conn, "
     select * from articulos
     inner join autor
-    on autor.idautor = articulos.idautor;
+    on autor.idautor = articulos.idautor
+    where idarticulos={$id};
     ");
 
     foreach($response as $data){
         echo "
         <div class='articulo-content'>
             <div class='titulo'>
-                <h2>
-                    <a href='./?id={$data['idarticulos']}'>
-                        {$data['Titulo']}
-                    </a>
-                </h2>
+                <h2>{$data['Titulo']}</h2>
             </div>
             <div class='contenido'>
                 <p>{$data['Contenido']}</p>

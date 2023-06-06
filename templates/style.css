@@ -1,117 +1,13 @@
-/* Search */
-.search{
-    display: inline;
-    text-align: center;
-    padding: 1em;
-}
-.search form{
-    display: inline;
-    margin: 3em;
-}
-.profesores{
-    text-align: center;
-    margin: 2em;
-}
-.profesores table td{
-    padding: 0;
-}
-
-.back-bottom{
-    text-align: center;
-}
-
-.encabezado {
-    margin: 10px;
-}
-.encabezado img{
-    float: left;
-    width: 100px;
-}
-.encabezado h3{
-    float: right;
-    text-align: right;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0.2em;
-    font-size: 16px;
-}
-
-.encabezado-1{
-    display: inline;
-    text-align: center;
-    font-size: 14px;
-}
-.encabezado-1 h1{
-    font-size: 16px;
-}
-
-table{
-    padding: 2em;
-    border: solid;
-}
-table th {
-    text-align: center;
-}
-.info{
-    text-align: center;
+.articulo-content{
+    border: solid black;
     margin: 1em;
-    width: 97%;
-}
-.info img{
-    width: 70px;
-    border-style: solid;
-}
-.tabla{
-    display: inline-block;
-    width: 97%;
-    margin: 1em;
+    padding: 0.5em;
 }
 
-.rebelde{
-    width: 60%;
-}
-.rebelde canvas{
-    width: 100%;
-}
-
-.page-no-break {
+.pie-articulo{
     display: flex;
-    margin: 1em;
-    justify-content: center; /* Alinea los elementos al centro horizontalmente */
-    align-items: center; /* Alinea los elementos al centro verticalmente */
 }
 
-.grafico {
-    flex: 1; /* Toma el 50% del ancho disponible */
-    display: block;
-}
-
-.total {
-    flex: 1; /* Toma el 50% del ancho disponible */
-    display: block;
-    width: 90%;
-    margin: 1em;
-    align-items: center;
-}
-
-
-@media print{
-    .search{
-        display: none;
-    }
-    .profesores{
-        font-size: 10px;
-    }
-    .profesores td{
-        margin: 0;
-    }
-    .profesores a{
-        text-decoration: none;
-        color: black;
-    }
-    .page-no-break{
-        page-break-inside: avoid;
-    }
-    .total{
-        width: 50%;
-    }
+.pie-articulo p, img {
+    margin-right: 1em;
 }
