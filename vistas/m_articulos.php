@@ -6,7 +6,6 @@ function listar($conn, $filtro){
         FROM articulos
         INNER JOIN autor ON autor.idautor = articulos.idautor
     ";
-
     // Verificar si el filtro está vacío
     if (empty($filtro)) {
         // No se proporcionó filtro, se muestran todos los resultados
@@ -15,9 +14,26 @@ function listar($conn, $filtro){
         // Se proporcionó filtro, se agregan las condiciones a la consulta
         $query .= " WHERE FechaCreacion >= '{$filtro['desde']}' AND FechaCreacion <= '{$filtro['hasta']}';";
     }
-
     $response = mysqli_query($conn, $query);
 
+    // Formulario
+    echo "
+    <div class='search'>
+        <form action='index.php' method='GET'>
+            <label for='fecha_desde'>Fecha Desde:</label>
+            <input type='date' name='desde' id='desde' required>
+            
+            <label for='fecha_hasta'>Fecha Hasta:</label>
+            <input type='date' name='hasta' id='hasta' required>
+                
+            <input type='submit' value='Consultar'>
+        </form>
+
+        <form action='index.php' method='GET'>
+            <input type='submit' value='Todos'>
+        </form>
+    </div>
+    ";
     foreach($response as $data){
         echo "
         <div class='articulo-content'>

@@ -15,29 +15,26 @@ require_once 'database/database.php';
 $db = new database();
 $conn = $db->conn;
 
-/**
- * Lo que hago aqui es que si los campos de filtro (desde) estan
- * vacios muestro todos los articulos, en caso contrario solo muestro 
- * los articulos que coinciden
- */
+// Todos
+if($filtro['desde'] == 0 && $filtro['id'] == 0){
+ echo 'Me ejecute 3';
+    require_once 'vistas/m_articulos.php';
+    listar($conn, NULL);
+}
 
 // filtro por fecha
 if($filtro['desde'] != 0){
  echo 'Me ejecute 1';
     require_once 'vistas/m_articulos.php';
     listar($conn, $filtro);
+}
 
-}if($filtro['id'] != 0){
+// filtro por id 
+if($filtro['id'] != 0){
  echo 'Me ejecute 2';
     require_once 'vistas/m_articulo.php';
     ver($conn, $filtro);
-
-}if($filtro['desde'] == 0 && $filtro['id'] == 0){
- echo 'Me ejecute 3';
-    require_once 'vistas/m_articulos.php';
-    listar($conn, NULL);
 }
-
 
 $plantilla->encabezado();
 // Plantilla pie de pagina 
