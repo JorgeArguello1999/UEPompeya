@@ -17,21 +17,18 @@ $conn = $db->conn;
 
 // filtro por fecha
 if($filtro['desde'] != 0){
-    echo "Me ejecute 1";
     require_once 'vistas/m_articulos.php';
     listar($conn, $filtro);
 }
 
 // filtro por id 
 if($filtro['id'] != 0){
-    echo "Me ejecute 2";
     require_once 'vistas/m_articulo.php';
     ver($conn, $filtro);
 }
 
 // Todos
 if($filtro['desde'] == 0 && $filtro['id'] == 0){
-    echo "Me ejecute 3";
     require_once 'vistas/m_articulos.php';
     listar($conn, NULL);
 }
