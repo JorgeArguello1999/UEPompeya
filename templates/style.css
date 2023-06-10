@@ -11,3 +11,22 @@
 .pie-articulo p, img {
     margin-right: 1em;
 }
+
+/* Search */
+.search{
+    display: flex;
+    align-items: center;
+}
+.search form{
+    margin: 1em;
+}
+.search input{
+    margin: 0.5em;
+}
+
+/* Articulos */
+.articulos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}

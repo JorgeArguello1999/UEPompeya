@@ -16,24 +16,6 @@ function listar($conn, $filtro){
     }
     $response = mysqli_query($conn, $query);
 
-    // Formulario
-    echo "
-    <div class='search'>
-        <form action='index.php' method='GET'>
-            <label for='fecha_desde'>Fecha Desde:</label>
-            <input type='date' name='desde' id='desde' required>
-            
-            <label for='fecha_hasta'>Fecha Hasta:</label>
-            <input type='date' name='hasta' id='hasta' required>
-                
-            <input type='submit' value='Consultar'>
-        </form>
-
-        <form action='index.php' method='GET'>
-            <input type='submit' value='Todos'>
-        </form>
-    </div>
-    ";
     foreach($response as $data){
         echo "
         <div class='articulo-content'>
