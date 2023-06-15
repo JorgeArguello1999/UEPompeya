@@ -30,3 +30,15 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
+
+/* Galeria */
+.galeria-imagen{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.galeria-imagen img{
+    width: 100%;
+    border: solid black 0.5em;
+}
