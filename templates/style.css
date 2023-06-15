@@ -31,6 +31,10 @@
     grid-gap: 20px;
 }
 
+.articulo-content img{
+    width: 50%;
+}
+
 /* Galeria */
 .galeria-imagen{
     display: grid;
