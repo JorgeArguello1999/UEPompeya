@@ -16,7 +16,7 @@ function ver($conn, $filtro){
             </div>
             <div class='contenido'>
                 <p>{$data['Contenido']}</p>
-                <img src='{$data['ImagenPrincipal']}' alt='Imagen Principal del Articulo'>
+                <img src='./imagenes/{$data['ImagenPrincipal']}' alt='Imagen Principal del Articulo'>
             </div>
             <div class='pie-articulo'>
                 <p>{$data['nombres']}</p>
