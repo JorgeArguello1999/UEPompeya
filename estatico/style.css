@@ -4,7 +4,6 @@
     box-sizing: 0;
     text-decoration: none;
 }
-
 element.style {
     position: relative;
     min-height: 100%;
@@ -199,7 +198,7 @@ nav > ul > li > a{
     transition: all 0.3s ease 0s;
 }
 .Inscripciones a{
-    color: #FF0000; 
+    color: #FF0000
 }
 
 nav > ul > li > a:hover{
