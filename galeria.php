@@ -40,6 +40,7 @@ foreach ($archivos as $archivo) {
 }
 echo '
 </main>
+<script src="./templates/script.js"></script>
 ';
 
 $plantilla->pie_pagina();

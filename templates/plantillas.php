@@ -7,7 +7,10 @@ class plantillas{
         <head>
             <title>UE Pompeya</title>
             <meta charset='UTF-8'>
+
             <link rel='stylesheet' href='./templates/galeria.css'>
+            <link rel='stylesheet' href='./templates/style.css'>
+		    <script src='./templates/script.js'></script>
 
             <!-- CDN -->
             <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ' crossorigin='anonymous'>
@@ -16,10 +19,11 @@ class plantillas{
             <!-- ICONOS -->
             <link rel='stylesheet' 
             href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-      
             <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css' integrity='Eha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e' crossorigin='anonymous'>
+
             <!--CSS-->
             <link rel='stylesheet' href='./templates/style_project.css'>
+
             <!--SLAIDER -->
                 <link rel='stylesheet' 
                 href='https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css'>
@@ -157,7 +161,6 @@ class plantillas{
         </script>
 
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
-		<script src='./templates/script.js'></script>
         </body>
         </html>
         ";
