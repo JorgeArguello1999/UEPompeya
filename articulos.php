@@ -23,7 +23,7 @@ $plantilla->encabezado();
  */
 echo "
     <div class='search'>
-        <form action='index.php' method='GET'>
+        <form action='articulos.php' method='GET'>
             <label for='fecha_desde'>Fecha Desde:</label>
             <input type='date' name='desde' id='desde' required>
             
@@ -33,7 +33,7 @@ echo "
             <input type='submit' class='btn btn-primary' value='Consultar'>
         </form>
 
-        <form action='index.php' method='GET'>
+        <form action='articulos.php' method='GET'>
             <input type='submit' class='btn btn-secondary' value='Todos'>
         </form>
     </div>

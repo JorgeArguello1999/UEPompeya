@@ -1,14 +1,32 @@
+       
+main{
+	display: inline-block;
+}
+
+main a{
+	padding: 10em;
+}
+        
+.galery img {
+    border-radius: 10%;
+    width: 20%;
+    border: solid 0.5em;
+}
+
 .title {
 	font-size: 55px;
 	text-transform: uppercase;
 	letter-spacing: 7px;
 }
 
-.galery img{
-	border-radius: 10%;
-	width: 95%;
+/*
+.galery{
+	display: inline-block;
+	border: solid 0.2em black;
 }
 
-.galery .col{
-	margin-bottom: 20px;
+.galery img{
+	border-radius: 10%;
+	width: 35%;
 }
+*/

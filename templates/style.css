@@ -14,11 +14,11 @@
 
 /* Search */
 .search{
-    display: flex;
+    display: block;
     align-items: center;
 }
 .search form{
-    margin: 1em;
+    margin: 0.5em;
 }
 .search input{
     margin: 0.5em;
@@ -27,22 +27,10 @@
 /* Articulos */
 .articulos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
 
 .articulo-content img{
     width: 50%;
-}
-
-/* Galeria */
-.galeria-imagen{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-}
-
-.galeria-imagen img{
-    width: 100%;
-    border: solid black 0.5em;
 }

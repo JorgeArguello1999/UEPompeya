@@ -11,7 +11,7 @@ $plantilla->encabezado();
 // Obtener la lista de archivos en el directorio
 $archivos = scandir($directorio);
 
-echo '}
+echo '
 <main clas="container">
 ';
 
@@ -23,18 +23,14 @@ foreach ($archivos as $archivo) {
     ) {
         // Generar el código HTML para mostrar la imagen
         echo '
-			<div class="row galery">
-				<div class="col s12 m4 l3">
-					<div class="material-placeholder">
-                        <img src="' . $directorio . '/' . $archivo . '" 
-                        alt="' . $archivo . '" 
-                        data-title="' . $archivo. '"
-                        class="responsive-img materialboxed"
-                        data-caption=" '. $archivo .' "
-                        >
-					</div>
-				</div>
-		    </div>
+        <a>
+            <img src="' . $directorio . '/' . $archivo . '" 
+            alt="' . $archivo . '" 
+            class="materialboxed galery"
+            data-title="' . $archivo. '"
+            data-caption=" '. $archivo .' "
+            >
+        </a>
         ';
     }
 }

@@ -21,7 +21,7 @@ function listar($conn, $filtro){
         <div class='articulo-content'>
             <div class='titulo'>
                 <h2>
-                    <a href='./?id={$data['idarticulos']}'>
+                    <a href='./articulos.php?id={$data['idarticulos']}'>
                         {$data['Titulo']}
                     </a>
                 </h2>
