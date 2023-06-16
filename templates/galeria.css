@@ -1,15 +1,12 @@
-       
-main{
-	display: inline-block;
+.container{
+	display: inline-block !important; 
+	background-color: red !important;
 }
 
-main a{
-	padding: 10em;
-}
-        
-.galery img {
+.galery{
+	padding: 0.5em;
+	margin: 1em;
     border-radius: 10%;
-    width: 20%;
     border: solid 0.5em;
 }
 

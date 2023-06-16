@@ -12,7 +12,7 @@ $plantilla->encabezado();
 $archivos = scandir($directorio);
 
 echo '
-<main clas="container">
+<div clas="container" style="display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;">
 ';
 
 // Iterar sobre los archivos y mostrar las imágenes
@@ -23,19 +23,18 @@ foreach ($archivos as $archivo) {
     ) {
         // Generar el código HTML para mostrar la imagen
         echo '
-        <a>
             <img src="' . $directorio . '/' . $archivo . '" 
             alt="' . $archivo . '" 
             class="materialboxed galery"
             data-title="' . $archivo. '"
             data-caption=" '. $archivo .' "
+            width="300px"
             >
-        </a>
         ';
     }
 }
 echo '
-</main>
+</div>
 ';
 
 $plantilla->pie_pagina();
