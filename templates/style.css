@@ -34,3 +34,8 @@
 .articulo-content img{
     width: 50%;
 }
+
+.pie-articulo img{
+    width: 50px;
+    border-radius: 50px;
+}

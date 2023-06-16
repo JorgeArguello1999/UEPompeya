@@ -9,6 +9,7 @@ function ver($conn, $filtro){
     ");
 
     foreach($response as $data){
+        $foto = base64_encode($data['foto']);
         echo "
         <div class='articulo-content'>
             <div class='titulo'>
@@ -21,7 +22,7 @@ function ver($conn, $filtro){
             <div class='pie-articulo'>
                 <p>{$data['nombres']}</p>
                 <p>{$data['FechaCreacion']}</p>
-                <img src='{$data['foto']}'>
+                <img src='data:image/jpeg;base64,{$foto}'>
             </div>
         </div>
         ";

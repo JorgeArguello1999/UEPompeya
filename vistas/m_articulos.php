@@ -17,6 +17,7 @@ function listar($conn, $filtro){
     $response = mysqli_query($conn, $query);
 
     foreach($response as $data){
+        $foto = base64_encode($data['foto']);
         echo "
         <div class='articulo-content'>
             <div class='titulo'>
@@ -35,7 +36,7 @@ function listar($conn, $filtro){
             <div class='pie-articulo'>
                 <p>{$data['nombres']}</p>
                 <p>{$data['FechaCreacion']}</p>
-                <img src='{$data['foto']}' alt='Foto de: {$data['nombres']}'>
+                <img src='data:image/jpeg;base64,{$foto}' alt='Foto de: {$data['nombres']}' width='10px'>
             </div>
         </div>
         ";
